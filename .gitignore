@@ -1,0 +1,48 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# TypeScript build output
+dist/
+out/
+tsconfig.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Debugging
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+*.bak
+.DS_Store
+Thumbs.db
+
+# Nodemon
+nodemon.json
+
+# System files
+*.~lock
+*.sublime-project
+*.sublime-workspace
+*.vscode/
