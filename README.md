@@ -101,6 +101,23 @@ export default mongoose.model<IUser>("User", userSchema);
 
 
 
++---------+         +-----------+         +--------+
+|  User   | <-----> |  Review   | <-----> |  Book  |
++---------+         +-----------+         +--------+
+     |                  |   ^                   |
+     |  creates         |   | references        | createdBy
+     +------------------+   +-------------------+
+
+
+
+| Entity   | Related To | Type      | Description                              |
+| -------- | ---------- | --------- | ---------------------------------------- |
+| `User`   | Book       | 1-to-Many | One user can create many books           |
+| `User`   | Review     | 1-to-Many | One user can post many reviews           |
+| `Book`   | Review     | 1-to-Many | One book can have many reviews           |
+| `Review` | Book+User  | Many-to-1 | Each review belongs to 1 book and 1 user |
+
+
 
 {
 	"info": {
